@@ -82,5 +82,5 @@ footer {
 }
 
 .carousel-indicators {
-    top: 11rem;
+    display:none;
 }
