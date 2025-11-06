@@ -1,88 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Saadaoui Amine</title>
-    <!-- Bootstrap 5 CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Optional custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Saadaoui Amine</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Optional custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Header / Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Amine Saadaoui</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-     <section class="projects py-5 bg-light">
-  <div class="container text-center">
-    <h1 class="display-5 mb-4 fw-semibold">Featured TYPO3 Projects</h1>
-    <p class="lead mb-5">A selection of my key TYPO3 development projects — focused on performance, automation, and developer experience.</p>
-
-    <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-
-        <!-- Project 1 -->
-        <div class="carousel-item active">
-          <div class="p-4 border rounded-3 shadow-sm text-start bg-white mx-auto" style="max-width: 800px;">
-            <h3 class="fw-bold">Emoji Selector</h3>
-            <p class="mb-1 text-muted">Custom CKEditor plugin for TYPO3 13</p>
-            <p class="mb-0">Developed a modern TYPO3 CKEditor plugin allowing editors to easily insert emojis directly into rich text fields. Integrated as an <code>extraPlugin</code> for TYPO3 13 with a JSON-based emoji dataset.</p>
-          </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="carousel-item">
-          <div class="p-4 border rounded-3 shadow-sm text-start bg-white mx-auto" style="max-width: 800px;">
-            <h3 class="fw-bold">Migration Tool</h3>
-            <p class="mb-1 text-muted">CLI export/import for TYPO3 data</p>
-            <p class="mb-0">Built a robust command-line extension to export and import TYPO3 content using the <code>ImportExport</code> API — supporting data migration between TYPO3 versions with Excel output and performance optimization.</p>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="carousel-item">
-          <div class="p-4 border rounded-3 shadow-sm text-start bg-white mx-auto" style="max-width: 800px;">
-            <h3 class="fw-bold">Anuaries Import</h3>
-            <p class="mb-1 text-muted">XML to TYPO3 importer</p>
-            <p class="mb-0">Implemented a CLI importer for film and seance data from XML feeds. Handles categories, tags, and FAL media while ensuring clean Extbase persistence and data validation.</p>
-          </div>
-        </div>
-
+  <!-- Header / Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Amine Saadaoui</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
       </div>
-
-      <!-- Controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
     </div>
-  </div>
-</section>
+  </nav>
 
+  <!-- Projects Section -->
+  <section class="projects py-5 bg-light">
+    <div class="container text-center">
+      <h1 class="display-5 mb-4 fw-semibold">Featured TYPO3 Projects</h1>
+      <p class="lead mb-5">A selection of my key TYPO3 development projects — focused on performance, automation, and developer experience.</p>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        &copy; 2025 Saadaoui Amine
-    </footer>
+      <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
 
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <div class="carousel-inner">
+
+          <!-- Project 1 -->
+          <div class="carousel-item active">
+            <div class="p-4 border rounded-3 shadow-sm text-start bg-white mx-auto" style="max-width: 800px;">
+              <h3 class="fw-bold">Emoji Selector</h3>
+              <p class="mb-1 text-muted">Custom CKEditor plugin for TYPO3 13</p>
+              <p class="mb-0">Developed a modern TYPO3 CKEditor plugin allowing editors to easily insert emojis directly into rich text fields. Integrated as an <code>extraPlugin</code> for TYPO3 13 with a JSON-based emoji dataset.</p>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="carousel-item">
+            <div class="p-4 border rounded-3 shadow-sm text-start bg-white mx-auto" style="max-width: 800px;">
+              <h3 class="fw-bold">Migration Tool</h3>
+              <p class="mb-1 text-muted">CLI export/import for TYPO3 data</p>
+              <p class="mb-0">Built a robust command-line extension to export and import TYPO3 content using the <code>ImportExport</code> API — supporting data migration between TYPO3 versions with Excel output and performance optimization.</p>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="carousel-item">
+            <div class="p-4 border rounded-3 shadow-sm text-start bg-white mx-auto" style="max-width: 800px;">
+              <h3 class="fw-bold">Anuaries Import</h3>
+              <p class="mb-1 text-muted">XML to TYPO3 importer</p>
+              <p class="mb-0">Implemented a CLI importer for film and seance data from XML feeds. Handles categories, tags, and FAL media while ensuring clean Extbase persistence and data validation.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    &copy; 2025 Saadaoui Amine
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
